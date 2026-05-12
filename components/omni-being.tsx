@@ -36,35 +36,70 @@ export default function OmniBeing() {
         </div>
 
         {/* Philosophy / PDF Content Section */}
-        <div className="grid md:grid-cols-2 gap-12 mb-20 items-stretch">
-          <div className="bg-white p-8 rounded-2xl shadow-xl border border-accent/10 relative overflow-hidden group hover:border-accent/30 transition-all duration-500 flex flex-col">
-            <div className="w-full h-48 sm:h-64 mb-6 rounded-xl overflow-hidden shadow-inner">
-              <img src="/omni-meditation-art.png" alt="Yogic Meditation and Chakras" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <div className="flex flex-col gap-12 mb-20">
+          
+          {/* Prana Row */}
+          <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-accent/10 relative overflow-hidden group hover:border-accent/30 transition-all duration-500">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-inner bg-[#FAF5EF] flex items-center justify-center p-4">
+                <img src="/buddha-from-pdf.png" alt="Yogi Breath and Buddha" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" onError={(e) => { e.currentTarget.src = "/omni-meditation-art.png" }} />
+              </div>
+              <div>
+                <h3 className="font-serif-heading text-3xl text-primary mb-6 flex items-center gap-3">
+                  <Sparkles className="text-accent" /> Prana & Yogi Breath
+                </h3>
+                <ul className="text-muted-foreground space-y-4 list-none pl-1">
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>Prana (Life Energy):</strong> The universal vital force flowing through energy channels (<em>Nadi</em>) and centers (<em>Chakras</em>).</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>Pranayama (Yogi Breath):</strong> The ancient science of controlled breathing to unlock energy blocks.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>The 3 Stages of Breath:</strong> Master <em>Puraka</em> (Inhale), <em>Kumbaka</em> (Hold), and <em>Rechaka</em> (Exhale).</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>Instant Stress Relief:</strong> Rapidly calms the nervous system, drastically improves mental clarity, and enhances physical vitality.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <h3 className="font-serif-heading text-2xl text-primary mb-4 flex items-center gap-3">
-              <Sparkles className="text-accent" /> Prana & Pranayama
-            </h3>
-            <p className="text-muted-foreground mb-4">
-              <strong>Prana</strong> is the universal life force that distinguishes the living from the dead. It permeates the universe and flows through all living beings through channels called <em>Nadi</em> and centers called <em>Chakras</em>.
-            </p>
-            <p className="text-muted-foreground flex-grow">
-              Through <strong>Pranayama</strong> (regulated breathing involving Puraka, Kumbaka, and Rechaka), we can enhance this flow. This practice rapidly calms the mind, releases stress, and profoundly improves mental clarity and physical health.
-            </p>
           </div>
 
-          <div className="bg-white p-8 rounded-2xl shadow-xl border border-accent/10 relative overflow-hidden group hover:border-accent/30 transition-all duration-500 flex flex-col">
-            <div className="w-full h-48 sm:h-64 mb-6 rounded-xl overflow-hidden shadow-inner bg-[#FAF5EF] flex items-center justify-center">
-              <img src="/omni-diet-art.png" alt="Healthy Ayurvedic Diet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          {/* Diet Row */}
+          <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-accent/10 relative overflow-hidden group hover:border-accent/30 transition-all duration-500">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="order-2 md:order-1">
+                <h3 className="font-serif-heading text-3xl text-primary mb-6 flex items-center gap-3">
+                  <Leaf className="text-accent" /> Way of Life & Diet
+                </h3>
+                <ul className="text-muted-foreground space-y-4 list-none pl-1">
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>You Are What You Eat:</strong> Food is pure energy that directly influences your Mind and Body.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>Food Gunas:</strong> Beyond calories, foods carry specific energetic characteristics that can keep you calm, dull, or active.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>Disease Prevention:</strong> Ignorance in eating habits is the root of immunological and metabolic disorders.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1 text-lg">✦</span>
+                    <span className="text-lg"><strong>Dietary Wisdom:</strong> Gain clarity on the perfect nutritional balance for exceptional lifelong health.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="order-1 md:order-2 w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-inner bg-[#FAF5EF] flex items-center justify-center p-4">
+                <img src="/omni-diet-art.png" alt="Healthy Ayurvedic Diet" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
             </div>
-            <h3 className="font-serif-heading text-2xl text-primary mb-4 flex items-center gap-3">
-              <Leaf className="text-accent" /> Way of Life & Diet
-            </h3>
-            <p className="text-muted-foreground mb-4">
-              "We are what we eat." Food directly influences the mind and body. Apart from caloric value, each food has specific characteristics (<em>Gunas</em>) that enhance daily life—some keep us calm, while others may make us dull or active.
-            </p>
-            <p className="text-muted-foreground flex-grow">
-              Ignorance in eating habits leads to immunological and metabolic disorders. Wisdom about the food we consume is the foundation of maintaining oneself in exceptional health.
-            </p>
           </div>
         </div>
 
