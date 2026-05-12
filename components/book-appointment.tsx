@@ -155,11 +155,11 @@ export default function BookAppointment() {
                 className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/50 bg-background text-foreground"
               >
                 <option value="">Select a service</option>
-                <option value="Physiotherapy">Physiotherapy</option>
-                <option value="Sports Injury Treatment">Sports Injury Treatment</option>
-                <option value="Pain Management">Pain Management</option>
-                <option value="Rehabilitation">Rehabilitation</option>
-                <option value="Manual Therapy">Manual Therapy</option>
+                <option value="Homoeopathy">Homoeopathy</option>
+                <option value="Alternative Medicine">Alternative Medicine</option>
+                <option value="Omni Being (Mindfulness & Yoga)">Omni Being (Mindfulness & Yoga)</option>
+                <option value="General Wellness">General Wellness</option>
+                <option value="Diet & Lifestyle Counseling">Diet & Lifestyle Counseling</option>
               </select>
             </div>
 

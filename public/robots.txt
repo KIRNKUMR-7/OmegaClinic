@@ -1,5 +1,5 @@
-# Robots.txt for Prasad Physio Therapy - Locomotion Rehabilitation Center
-# Website: https://prasadphysioclinic.com
+# Robots.txt for Omega Clinic - Homoeopathy & Alternative Medicine
+# Website: https://omegaclinic.com
 # Last updated: December 2025
 
 # ===========================================
@@ -129,10 +129,10 @@ Disallow: /*.json$
 # SITEMAP LOCATION
 # ===========================================
 
-Sitemap: https://prasadphysioclinic.com/sitemap.xml
+Sitemap: https://omegaclinic.com/sitemap.xml
 
 # ===========================================
 # HOST DIRECTIVE
 # ===========================================
 
-Host: https://prasadphysioclinic.com
+Host: https://omegaclinic.com

@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color scheme for physiotherapy clinic - coffee brown, warm gold, ivory background */
+  /* Updated color scheme for Omega Clinic - coffee brown, warm gold, ivory background */
   --background: #f5f1ed;
   --foreground: #2e1f1a;
   --card: #ffffff;
