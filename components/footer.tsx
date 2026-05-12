@@ -23,16 +23,22 @@ export default function Footer() {
           {/* Brand */}
           <div className="text-center sm:text-left">
             <div className="flex items-center gap-3 mb-4 justify-center sm:justify-start">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center p-1">
-                <img
-                  src="/omega-logo.png"
-                  alt="Omega Clinic Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div>
-                <div className="font-serif-heading text-base sm:text-lg font-semibold">Omega Clinic</div>
-                <p className="text-xs text-primary-foreground/70"></p>
+              <div className="flex flex-row items-center gap-2">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center p-1">
+                  <img
+                    src="/omega-logo.png"
+                    alt="Omega Clinic Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="h-12 w-px bg-primary-foreground/30 mx-1"></div>
+                <div className="w-24 h-12 sm:w-28 sm:h-14 flex items-center justify-center p-1">
+                  <img
+                    src="/omnibeing-logo.png"
+                    alt="Omni Being Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
             <p className="text-sm text-primary-foreground/80 mb-2">Wholistic Healing in Body, Mind & Soul</p>
