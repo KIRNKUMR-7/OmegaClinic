@@ -34,7 +34,7 @@ export default function Footer() {
                 <div className="h-12 w-px bg-primary-foreground/30 mx-1"></div>
                 <div className="w-24 h-12 sm:w-28 sm:h-14 flex items-center justify-center p-1">
                   <img
-                    src="/omnibeing-logo.png"
+                    src="/dwe.png"
                     alt="Omni Being Logo"
                     className="w-full h-full object-contain"
                   />
