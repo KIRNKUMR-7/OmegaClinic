@@ -1,9 +1,8 @@
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY || "fallback_key")
     const { name, phone, email, date, time, service, message } = await request.json()
 
     if (!name || !phone || !email || !date || !time || !service || !message) {
