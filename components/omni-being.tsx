@@ -20,7 +20,7 @@ export default function OmniBeing() {
           <div className="flex justify-center mb-6">
             <div className="w-32 h-16 sm:w-48 sm:h-24 relative">
               <img 
-                src="/omnibeing-logo.png" 
+                src="/dwe.png" 
                 alt="Omni Being Logo" 
                 className="w-full h-full object-contain"
               />

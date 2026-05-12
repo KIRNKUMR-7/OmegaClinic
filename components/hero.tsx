@@ -40,7 +40,7 @@ export default function Hero({ onBookAppointment }: HeroProps) {
             
             <div className="relative w-32 sm:w-64 md:w-[20rem] flex items-center justify-center">
               <img
-                src="/omnibeing-logo.png"
+                src="/dwe.png"
                 alt="Omni Being Logo"
                 className="w-full h-auto object-contain"
                 style={{ maxHeight: '10rem' }}
