@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme for physiotherapy clinic - coffee brown, warm gold, ivory background */
+  --background: #f5f1ed;
+  --foreground: #2e1f1a;
+  --card: #ffffff;
+  --card-foreground: #2e1f1a;
+  --popover: #ffffff;
+  --popover-foreground: #2e1f1a;
+  --primary: #2e1f1a;
+  --primary-foreground: #f5f1ed;
+  --secondary: #c69a6b;
+  --secondary-foreground: #2e1f1a;
+  --muted: #e8dfd6;
+  --muted-foreground: #6b5648;
+  --accent: #c69a6b;
+  --accent-foreground: #2e1f1a;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #e8dfd6;
+  --input: #ffffff;
+  --ring: #c69a6b;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: #f5f1ed;
+  --sidebar-foreground: #2e1f1a;
+  --sidebar-primary: #2e1f1a;
+  --sidebar-primary-foreground: #f5f1ed;
+  --sidebar-accent: #c69a6b;
+  --sidebar-accent-foreground: #2e1f1a;
+  --sidebar-border: #e8dfd6;
+  --sidebar-ring: #c69a6b;
+}
+
+.dark {
+  --background: #2e1f1a;
+  --foreground: #f5f1ed;
+  --card: #3d2820;
+  --card-foreground: #f5f1ed;
+  --popover: #3d2820;
+  --popover-foreground: #f5f1ed;
+  --primary: #c69a6b;
+  --primary-foreground: #2e1f1a;
+  --secondary: #c69a6b;
+  --secondary-foreground: #2e1f1a;
+  --muted: #5b3f34;
+  --muted-foreground: #c69a6b;
+  --accent: #c69a6b;
+  --accent-foreground: #2e1f1a;
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: #5b3f34;
+  --input: #3d2820;
+  --ring: #c69a6b;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: #2e1f1a;
+  --sidebar-foreground: #f5f1ed;
+  --sidebar-primary: #c69a6b;
+  --sidebar-primary-foreground: #2e1f1a;
+  --sidebar-accent: #c69a6b;
+  --sidebar-accent-foreground: #2e1f1a;
+  --sidebar-border: #5b3f34;
+  --sidebar-ring: #c69a6b;
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add smooth scroll behavior for navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+.font-serif-heading {
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+}
+

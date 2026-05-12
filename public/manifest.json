@@ -1,0 +1,34 @@
+{
+    "name": "Omega Clinic - Wholistic Healing in Body, Mind & Soul",
+    "short_name": "Omega Clinic",
+    "description": "Wholistic Healing in Body, Mind & Soul. Helps in Construct your Life in a Healthy Way by realizing the Truth of Reality. Also, Elevate your consciousness to Higher Dimension.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1a1a1a",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en-IN",
+    "categories": [
+        "health",
+        "medical",
+        "fitness"
+    ],
+    "icons": [
+        {
+            "src": "/omega-logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/omega-logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [],
+    "related_applications": [],
+    "prefer_related_applications": false
+}

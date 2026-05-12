@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://prasadphysioclinic.com/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://prasadphysioclinic.com/#about</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://prasadphysioclinic.com/#services</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Team Section -->
+  <url>
+    <loc>https://prasadphysioclinic.com/#team</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Testimonials Section -->
+  <url>
+    <loc>https://prasadphysioclinic.com/#testimonials</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://prasadphysioclinic.com/#get-in-touch</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Book Appointment Section -->
+  <url>
+    <loc>https://prasadphysioclinic.com/#book-appointment</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

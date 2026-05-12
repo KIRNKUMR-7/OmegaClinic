@@ -1,0 +1,138 @@
+# Robots.txt for Prasad Physio Therapy - Locomotion Rehabilitation Center
+# Website: https://prasadphysioclinic.com
+# Last updated: December 2025
+
+# ===========================================
+# ALLOW ALL SEARCH ENGINES & AI CRAWLERS
+# ===========================================
+
+# Google Search Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing Search Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yahoo Search
+User-agent: Slurp
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Baidu (Chinese search engine)
+User-agent: Baiduspider
+Allow: /
+
+# Yandex (Russian search engine)
+User-agent: YandexBot
+Allow: /
+
+# ===========================================
+# AI CRAWLERS (ChatGPT, Claude, Perplexity, etc.)
+# ===========================================
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# OpenAI ChatGPT User agent
+User-agent: ChatGPT-User
+Allow: /
+
+# Google Bard / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic Claude
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# Microsoft Copilot
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (for AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# ===========================================
+# SOCIAL MEDIA CRAWLERS
+# ===========================================
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter / X
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest
+User-agent: Pinterest
+Allow: /
+
+# WhatsApp
+User-agent: WhatsApp
+Allow: /
+
+# Telegram
+User-agent: TelegramBot
+Allow: /
+
+# Instagram
+User-agent: Instagram
+Allow: /
+
+# ===========================================
+# DEFAULT RULE FOR ALL OTHER BOTS
+# ===========================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /*.json$
+
+# ===========================================
+# SITEMAP LOCATION
+# ===========================================
+
+Sitemap: https://prasadphysioclinic.com/sitemap.xml
+
+# ===========================================
+# HOST DIRECTIVE
+# ===========================================
+
+Host: https://prasadphysioclinic.com
