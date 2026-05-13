@@ -149,8 +149,7 @@ export default function Services() {
                     <div className="text-center mb-12">
                       <h3 className="font-serif-heading text-3xl md:text-4xl mb-4">Online Consulting Services</h3>
                       <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-primary-foreground/90 font-medium">
-                        <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full"><Clock size={18} /> Every Sunday @ 10:30 AM</span>
-                        <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full"><CreditCard size={18} /> Per Session ₹499</span>
+                        <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full"><Clock size={18} /> Every Sunday @ 07.30AM - 09.30AM</span>
                       </div>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
