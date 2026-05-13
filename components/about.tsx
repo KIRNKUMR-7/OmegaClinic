@@ -22,7 +22,7 @@ export default function About() {
           </div>
           <h1 className="dr-name mt-6 text-3xl md:text-4xl text-primary text-center" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 700, textTransform: 'uppercase' }}>
             Dr. M. MOHAN<br />
-            <span className="pt-suffix" style={{ fontSize: '0.6em', fontWeight: 500 }}>B.H.M.S., M.D<span style={{ fontSize: '0.7em', verticalAlign: 'middle' }}>(AM)</span>.</span>
+            <span className="pt-suffix" style={{ fontSize: '0.6em', fontWeight: 500 }}>B.H.M.S., M.D<span style={{ fontSize: '0.7em', verticalAlign: 'middle' }}>(AM)</span>.,</span>
           </h1>
           <p className="dr-title mt-4 text-xs sm:text-sm md:text-base text-center" style={{
             fontFamily: "var(--font-playfair), serif",
