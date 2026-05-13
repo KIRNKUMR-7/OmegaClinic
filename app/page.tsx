@@ -5,7 +5,6 @@ import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import About from "@/components/about"
 import Services from "@/components/services"
-import OmniBeing from "@/components/omni-being"
 
 import GetInTouch from "@/components/get-in-touch"
 import BookAppointment from "@/components/book-appointment"
@@ -37,7 +36,6 @@ export default function Home() {
         <GoogleMap />
       </div>
       
-      <OmniBeing />
       
       <WhatsAppFloatButton />
       <Footer />

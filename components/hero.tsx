@@ -8,7 +8,7 @@ export default function Hero({ onBookAppointment }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] md:min-h-screen flex flex-col items-center justify-center pt-12 sm:pt-16 pb-12 overflow-hidden"
+      className="relative min-h-[90vh] md:min-h-screen flex flex-col items-center justify-center pt-6 sm:pt-8 pb-10 overflow-hidden"
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -23,9 +23,9 @@ export default function Hero({ onBookAppointment }: HeroProps) {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="text-center space-y-6 sm:space-y-8">
+        <div className="text-center space-y-5 sm:space-y-6">
           {/* Logos */}
-          <div className="flex flex-row justify-center items-center max-w-3xl mx-auto mb-4 sm:mb-6 gap-4 sm:gap-8 px-2">
+          <div className="flex flex-row justify-center items-center max-w-3xl mx-auto mb-0 gap-4 sm:gap-8 px-2">
             <div className="relative w-24 sm:w-48 md:w-56 flex items-center justify-center">
               <img
                 src="/omega-logo.png"
@@ -34,43 +34,38 @@ export default function Hero({ onBookAppointment }: HeroProps) {
                 style={{ maxHeight: '12rem' }}
               />
             </div>
-            
+
             {/* Vertical Divider */}
             <div className="h-16 sm:h-24 w-px bg-primary/30 mx-1 sm:mx-2 shrink-0"></div>
-            
-            <div className="relative w-32 sm:w-64 md:w-[20rem] flex items-center justify-center">
+
+            <div className="relative w-40 sm:w-72 md:w-96 flex items-center justify-center">
               <img
-                src="/dwe.png"
+                src="/omnibeing-logo.png"
                 alt="Omni Being Logo"
                 className="w-full h-auto object-contain"
-                style={{ maxHeight: '10rem' }}
+                style={{ maxHeight: '12rem' }}
               />
             </div>
           </div>
 
-          <div className="space-y-2 sm:space-y-3">
-            <p className="text-sm sm:text-lg md:text-xl text-accent tracking-wide" style={{
-              fontFamily: "var(--font-playfair), serif",
+          <div className="space-y-2 sm:space-y-3 mt-12 sm:mt-14">
+            <p className="text-lg sm:text-xl md:text-2xl tracking-wide" style={{
+              fontFamily: "'Times New Roman', Times, serif",
               fontWeight: 700,
               letterSpacing: '0.1em',
-              lineHeight: '1.4'
+              lineHeight: '1.4',
+              color: '#7B4F2E'
             }}>
-              By Dr. M. MOHAN <span style={{ fontWeight: 600 }}>B.H.M.S., M.D(AM).,</span>
+              Dr. M. MOHAN <span style={{ fontWeight: 600 }}>B.H.M.S., M.D<span style={{ fontSize: '0.6em', verticalAlign: 'middle' }}>(AM)</span>.,</span>
               <br />
-              <span className="text-xs sm:text-sm opacity-80 mt-1 block" style={{ letterSpacing: '0.2em', fontWeight: 500 }}>REGISTER NO : 2742</span>
+              <span className="text-[10px] sm:text-xs mt-1 block" style={{ letterSpacing: '0.18em', fontWeight: 500, color: '#7B4F2E' }}>HOMOEOPATHY &amp; ALTERNATIVE MEDICINE<br />CONSULTANT</span>
             </p>
           </div>
 
           {/* Main heading */}
-          <h2 className="font-serif text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary leading-tight text-balance px-2">
-            <span className="block">Wholistic Healing in</span>
-            <span className="text-accent block">Body, Mind & Soul.</span>
+          <h2 className="font-serif text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance px-2" style={{ color: '#C9A94B' }}>
+            Holistic Health Center
           </h2>
-
-          {/* Subheading */}
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-            Helps in Construct your Life in a Healthy Way by realizing the Truth of Reality. Also, Elevate your consciousness to Higher Dimension.
-          </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-2 sm:pt-4 px-4">

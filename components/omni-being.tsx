@@ -20,7 +20,7 @@ export default function OmniBeing() {
           <div className="flex justify-center mb-6">
             <div className="w-32 h-16 sm:w-48 sm:h-24 relative">
               <img 
-                src="/dwe.png" 
+                src="/omnibeing-logo.png" 
                 alt="Omni Being Logo" 
                 className="w-full h-full object-contain"
               />
@@ -130,7 +130,9 @@ export default function OmniBeing() {
 
             <div className="mt-12 text-center">
               <a 
-                href="#get-in-touch" 
+                href="https://chat.whatsapp.com/HdHqGU9VBA0I1xwKtP9VrE"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-8 py-4 bg-accent text-accent-foreground font-bold rounded-lg shadow-lg hover:bg-accent/90 hover:scale-105 transition-all duration-300"
               >
                 Join the Program Today

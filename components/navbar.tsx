@@ -42,7 +42,7 @@ export default function Navbar() {
               <span className="text-sm text-muted-foreground mx-1">🔗</span>
               <div className="flex w-20 h-10 sm:w-24 sm:h-12 items-center justify-center p-1">
                 <img
-                  src="/dwe.png"
+                  src="/omnibeing-logo.png"
                   alt="Omni Being Logo"
                   className="w-full h-full object-contain"
                 />
