@@ -32,12 +32,15 @@ export default function Home() {
 
       {/* Omega Trifold Brochure — 3508×1365px, ratio 2.57:1 */}
       <section className="w-full overflow-hidden relative mb-12">
-        <img
-          src="/Omega - Trifold Brochure 2.jpg"
-          alt="Omega Clinic Trifold Brochure"
-          className="w-full h-auto object-contain block"
-          style={{ aspectRatio: "3508 / 1365" }}
-        />
+        {/* Mobile: fixed tall height zoomed center. Desktop: natural ratio */}
+        <div className="w-full h-[280px] sm:h-[360px] md:h-auto">
+          <img
+            src="/omega-trifold.png"
+            alt="Omega Clinic Trifold Brochure"
+            className="w-full h-full md:h-auto object-cover md:object-contain object-center block"
+            style={{ aspectRatio: "3508 / 1365" }}
+          />
+        </div>
         {/* Invisible clickable overlay on "REGISTER NOW >>" — bottom-right of image */}
         <a
           href="#book-appointment"
@@ -49,8 +52,6 @@ export default function Home() {
             width: "16%",
             height: "18%",
             borderRadius: "4px",
-            // Uncomment below to debug position:
-            // background: "rgba(255,0,0,0.3)"
           }}
         />
       </section>
@@ -61,8 +62,8 @@ export default function Home() {
         <BookAppointment />
         <GoogleMap />
       </div>
-      
-      
+
+
       <WhatsAppFloatButton />
       <Footer />
     </main>
