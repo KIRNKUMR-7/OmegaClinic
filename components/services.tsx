@@ -87,7 +87,7 @@ export default function Services() {
                 {/* Omni Being Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                   <div className="flex justify-center mb-6">
-                    <div className="w-72 h-36 sm:w-[28rem] sm:h-56 relative">
+                    <div className="w-96 h-48 sm:w-[36rem] sm:h-72 relative">
                       <img src="/omnibeing-logo.png" alt="Omni Being Logo" className="w-full h-full object-contain" />
                     </div>
                   </div>

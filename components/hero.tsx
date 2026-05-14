@@ -38,12 +38,12 @@ export default function Hero({ onBookAppointment }: HeroProps) {
             {/* Vertical Divider */}
             <div className="h-16 sm:h-24 w-px bg-primary/30 mx-1 sm:mx-2 shrink-0"></div>
 
-            <div className="relative w-56 sm:w-96 md:w-[30rem] flex items-center justify-center">
+            <div className="relative w-72 sm:w-[28rem] md:w-[36rem] flex items-center justify-center">
               <img
                 src="/omnibeing-logo.png"
                 alt="Omni Being Logo"
                 className="w-full h-auto object-contain"
-                style={{ maxHeight: '14rem' }}
+                style={{ maxHeight: '18rem' }}
               />
             </div>
           </div>

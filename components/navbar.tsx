@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-4">
             <button
               onClick={toggleMenu}
@@ -32,7 +32,7 @@ export default function Navbar() {
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             <Link href="/" className="flex items-center gap-1 sm:gap-2">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center p-1">
+              <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center p-1">
                 <img
                   src="/omega-logo.png"
                   alt="Omega Clinic Logo"
@@ -40,7 +40,7 @@ export default function Navbar() {
                 />
               </div>
               <span className="text-sm text-muted-foreground mx-1">🔗</span>
-              <div className="flex w-20 h-10 sm:w-24 sm:h-12 items-center justify-center p-1">
+              <div className="flex w-28 h-14 sm:w-36 sm:h-16 items-center justify-center p-1">
                 <img
                   src="/omnibeing-logo.png"
                   alt="Omni Being Logo"
