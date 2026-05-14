@@ -4,11 +4,18 @@ import { Calendar, HeartPulse, Sparkles, Brain, Clock, CreditCard, Leaf, CheckCi
 
 export default function Services() {
   const omniBeing = [
-    { title: "Mindfulness", icon: <Brain size={24} />, desc: "Elevate your consciousness and focus" },
-    { title: "Om Meditation", icon: <Sparkles size={24} />, desc: "Deep relaxation & spiritual connection" },
-    { title: "Yoga Lifetime Scheduler", icon: <Calendar size={24} />, desc: "Personalized long-term practice routines" },
-    { title: "Diet & Exercise", icon: <HeartPulse size={24} />, desc: "Nutritional guidance & physical wellness" },
-    { title: "Mind Relief", icon: <Leaf size={24} />, desc: "Stress reduction & mental clarity" }
+    {
+      title: "Mindfulness",
+      icon: <Brain size={24} />,
+      desc: "Elevate your consciousness and focus",
+      points: ["Diet", "Exercise", "Sleep"]
+    },
+    {
+      title: "Meditation",
+      icon: <Sparkles size={24} />,
+      desc: "Ancient practices for inner peace and clarity",
+      points: ["Om Meditation", "Chakra Meditation"]
+    }
   ]
 
   return (
@@ -193,12 +200,20 @@ export default function Services() {
                         <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full"><Clock size={18} /> Every Sunday @ 07.30AM - 09.30AM</span>
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
                       {omniBeing.map((service, index) => (
                         <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-xl hover:bg-white/20 transition duration-300">
                           <div className="text-accent mb-4 bg-white/10 inline-block p-3 rounded-lg">{service.icon}</div>
-                          <h4 className="text-xl font-semibold mb-2">{service.title}</h4>
-                          <p className="text-primary-foreground/80 text-sm">{service.desc}</p>
+                          <h4 className="text-xl font-semibold mb-1">{service.title}</h4>
+                          <p className="text-primary-foreground/70 text-sm mb-3">{service.desc}</p>
+                          <ul className="flex flex-col gap-1">
+                            {service.points.map((pt, j) => (
+                              <li key={j} className="flex items-center gap-2 text-sm text-primary-foreground/90">
+                                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                                {pt}
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       ))}
                     </div>
