@@ -36,7 +36,7 @@ export default function Services() {
 
         <div className="flex flex-col gap-16">
 
-          {/* ── SERVICE 1: Direct Consultant ── */}
+          {/* â”€â”€ SERVICE 1: Direct Consultant â”€â”€ */}
           <div className="bg-card rounded-3xl border border-border shadow-xl overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
 
@@ -75,7 +75,7 @@ export default function Services() {
             </div>
           </div>
 
-          {/* ── SERVICE 2: Omni Being ── */}
+          {/* â”€â”€ SERVICE 2: Omni Being â”€â”€ */}
           <div id="omni-being">
             <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-semibold mb-6 ml-1 w-fit">
               Service 2
@@ -87,7 +87,7 @@ export default function Services() {
                 {/* Omni Being Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                   <div className="flex justify-center mb-6">
-                    <div className="w-32 h-16 sm:w-48 sm:h-24 relative">
+                    <div className="w-72 h-36 sm:w-[28rem] sm:h-56 relative">
                       <img src="/omnibeing-logo.png" alt="Omni Being Logo" className="w-full h-full object-contain" />
                     </div>
                   </div>
@@ -95,51 +95,92 @@ export default function Services() {
                     Welcome to <span className="text-accent">The Yogic Cult</span>
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    An exclusive online consulting service dedicated to harmonizing your Body, Mind, and Soul.
-                    Discover the profound ancient sciences of life energy and holistic nutrition.
+                    An exclusive online class dedicated to harmonizing your Body, Mind, and Soul.
+                    Discover the profound ancient sciences of life energy and holistic living.
                   </p>
                 </div>
 
-                {/* Prana Row */}
+                {/* Two Class Boxes */}
                 <div className="flex flex-col gap-12 mb-20">
+
+                  {/* Box 1 - Class 1: Mindfulness */}
+                  <div className="bg-white rounded-3xl shadow-xl border border-accent/10 overflow-hidden group hover:border-accent/30 transition-all duration-500">
+                    <div className="flex flex-col md:flex-row md:items-center gap-0">
+
+                      {/* Left - Square image container, fully visible */}
+                      <div className="md:w-1/2 flex-shrink-0">
+                        <div className="aspect-square w-full overflow-hidden rounded-none bg-[#f5f0eb]">
+                          <img
+                            src="/class1-mindfulness.jpg"
+                            alt="Mindfulness - Best Version of Our Self"
+                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Right - Mindfulness Content */}
+                      <div className="md:w-1/2 p-8 md:p-10 flex flex-col justify-center overflow-y-auto">
+                        <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold mb-3 w-fit">
+                          Class 1
+                        </div>
+
+                        {/* Mindfulness heading */}
+                        <h3 className="font-serif-heading text-4xl md:text-5xl text-primary leading-tight">
+                          Mindfulness:
+                        </h3>
+
+                        {/* Subtitle - Reprogramming Protocol */}
+                        <p className="text-accent italic text-sm mb-6 mt-1">
+                          Reprogramming Protocol of Mind & Body
+                        </p>
+
+                        {/* 3 Pillars - Diet, Exercise, Sleep */}
+                        <div className="flex flex-col gap-4">
+                          {[
+                            { title: 'Diet :', sub: 'We are, What We Eat' },
+                            { title: 'Exercise :', sub: 'How you Circulate Your Inner Rivers is Your Physical Adaptability' },
+                            { title: 'Sleep :', sub: 'Proper Sleep Pattern Determines Your Energy Levels' }
+                          ].map((pillar, i) => (
+                            <div key={i} className="flex gap-3 items-start">
+                              <div className="w-0.5 bg-accent/40 rounded-full flex-shrink-0 self-stretch" />
+                              <div>
+                                <p className="font-serif-heading text-base font-semibold text-primary leading-tight">
+                                  {pillar.title}
+                                </p>
+                                <p className="text-sm text-muted-foreground leading-snug mt-0.5">
+                                  {pillar.sub}
+                                </p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  {/* Box 2 â€” Class 2: Meditation & Chakra Tuning */}
                   <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-accent/10 relative overflow-hidden group hover:border-accent/30 transition-all duration-500">
                     <div className="grid md:grid-cols-2 gap-10 items-center">
-                      <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-inner bg-[#FAF5EF] flex items-center justify-center p-4">
-                        <img src="/buddha-from-pdf.png" alt="Yogi Breath and Buddha" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" onError={(e) => { e.currentTarget.src = "/omni-meditation-art.png" }} />
-                      </div>
-                      <div>
-                        <h3 className="font-serif-heading text-3xl text-primary mb-6 flex items-center gap-3">
-                          <Sparkles className="text-accent" /> Prana & Yogi Breath
+                      <div className="order-2 md:order-1">
+                        <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold mb-4">
+                          Class 2
+                        </div>
+                        <h3 className="font-serif-heading text-3xl text-primary mb-5 flex items-center gap-3">
+                          <Brain className="text-accent" /> Meditation &amp; Chakra Tuning
                         </h3>
                         <ul className="text-muted-foreground space-y-4 list-none pl-1">
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>Prana (Life Energy):</strong> The universal vital force flowing through energy channels (<em>Nadi</em>) and centers (<em>Chakras</em>).</span></li>
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>Pranayama (Yogi Breath):</strong> The ancient science of controlled breathing to unlock energy blocks.</span></li>
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>The 3 Stages of Breath:</strong> Master <em>Puraka</em> (Inhale), <em>Kumbaka</em> (Hold), and <em>Rechaka</em> (Exhale).</span></li>
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>Instant Stress Relief:</strong> Rapidly calms the nervous system, drastically improves mental clarity, and enhances physical vitality.</span></li>
+                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-base"><strong>1. Om Meditation:</strong> Sacred sound vibration practice to quiet the mind, expand awareness, and align with universal consciousness.</span></li>
+                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-base"><strong>2. Chakra Meditation:</strong> Targeted energy center activation to balance the body's seven chakras, unlocking vitality and inner harmony.</span></li>
                         </ul>
+                      </div>
+                      {/* Image — buddha image */}
+                      <div className="order-1 md:order-2 w-full h-64 md:h-[420px] rounded-2xl overflow-hidden shadow-inner bg-[#FAF5EF] flex items-center justify-center p-4">
+                        <img src="/buddha-from-pdf.png" alt="Meditation and Chakra" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
                       </div>
                     </div>
                   </div>
 
-                  {/* Diet Row */}
-                  <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-accent/10 relative overflow-hidden group hover:border-accent/30 transition-all duration-500">
-                    <div className="grid md:grid-cols-2 gap-10 items-center">
-                      <div className="order-2 md:order-1">
-                        <h3 className="font-serif-heading text-3xl text-primary mb-6 flex items-center gap-3">
-                          <Leaf className="text-accent" /> Way of Life & Diet
-                        </h3>
-                        <ul className="text-muted-foreground space-y-4 list-none pl-1">
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>You Are What You Eat:</strong> Food is pure energy that directly influences your Mind and Body.</span></li>
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>Food Gunas:</strong> Beyond calories, foods carry specific energetic characteristics that can keep you calm, dull, or active.</span></li>
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>Disease Prevention:</strong> Ignorance in eating habits is the root of immunological and metabolic disorders.</span></li>
-                          <li className="flex items-start gap-3"><span className="text-accent mt-1 text-lg">✦</span><span className="text-lg"><strong>Dietary Wisdom:</strong> Gain clarity on the perfect nutritional balance for exceptional lifelong health.</span></li>
-                        </ul>
-                      </div>
-                      <div className="order-1 md:order-2 w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-inner bg-[#FAF5EF] flex items-center justify-center p-4">
-                        <img src="/omni-diet-art.png" alt="Healthy Ayurvedic Diet" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
-                      </div>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Offerings Grid */}

@@ -1,6 +1,7 @@
 "use client"
 
 import { Calendar, HeartPulse, Sparkles, Brain, Clock, CreditCard, Leaf } from "lucide-react"
+import Image from "next/image"
 
 export default function OmniBeing() {
   const services = [
@@ -70,35 +71,96 @@ export default function OmniBeing() {
             </div>
           </div>
 
-          {/* Diet Row */}
-          <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-accent/10 relative overflow-hidden group hover:border-accent/30 transition-all duration-500">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div className="order-2 md:order-1">
-                <h3 className="font-serif-heading text-3xl text-primary mb-6 flex items-center gap-3">
-                  <Leaf className="text-accent" /> Way of Life & Diet
-                </h3>
-                <ul className="text-muted-foreground space-y-4 list-none pl-1">
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent mt-1 text-lg">✦</span>
-                    <span className="text-lg"><strong>You Are What You Eat:</strong> Food is pure energy that directly influences your Mind and Body.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent mt-1 text-lg">✦</span>
-                    <span className="text-lg"><strong>Food Gunas:</strong> Beyond calories, foods carry specific energetic characteristics that can keep you calm, dull, or active.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent mt-1 text-lg">✦</span>
-                    <span className="text-lg"><strong>Disease Prevention:</strong> Ignorance in eating habits is the root of immunological and metabolic disorders.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent mt-1 text-lg">✦</span>
-                    <span className="text-lg"><strong>Dietary Wisdom:</strong> Gain clarity on the perfect nutritional balance for exceptional lifelong health.</span>
-                  </li>
-                </ul>
+          {/* Reprogramming Protocol — Way of Life */}
+          <div className="rounded-3xl overflow-hidden shadow-2xl border border-accent/10 relative group">
+            <div className="grid md:grid-cols-2 min-h-[520px]">
+
+              {/* Left — Hero Poster Image */}
+              <div className="relative w-full min-h-[360px] md:min-h-[520px] overflow-hidden">
+                <img
+                  src="/omni-diet-art.png"
+                  alt="Reprogramming Protocol — Best Version of Yourself"
+                  className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/10" />
+                {/* Bottom text overlay like the poster */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+                  <p className="text-white/70 uppercase tracking-widest text-xs mb-1">Reprogramming Protocol of</p>
+                  <p className="text-white font-bold text-lg uppercase tracking-wide leading-snug">Mind and Body</p>
+                  <p className="text-white/60 italic text-sm mt-1">To Become the Best Version of Yourself</p>
+                </div>
               </div>
-              <div className="order-1 md:order-2 w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-inner bg-[#FAF5EF] flex items-center justify-center p-4">
-                <img src="/omni-diet-art.png" alt="Healthy Ayurvedic Diet" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+
+              {/* Right — Eat Topic with 4 Pillars */}
+              <div
+                className="relative flex flex-col justify-center px-10 py-12"
+                style={{
+                  background: "linear-gradient(135deg, #1a0a1e 0%, #2d1040 40%, #1a0a2e 70%, #0a0515 100%)"
+                }}
+              >
+                {/* Subtle cloud/nebula texture overlay */}
+                <div
+                  className="absolute inset-0 opacity-20 pointer-events-none"
+                  style={{
+                    backgroundImage: "radial-gradient(ellipse at 30% 20%, rgba(180,60,120,0.5) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(120,40,160,0.4) 0%, transparent 50%)"
+                  }}
+                />
+
+                <div className="relative z-10">
+                  {/* Topic heading with colon */}
+                  <h3
+                    className="mb-8"
+                    style={{
+                      fontFamily: "var(--font-great-vibes), cursive",
+                      fontSize: "clamp(2.2rem, 5vw, 3.2rem)",
+                      color: "#ffffff",
+                      textShadow: "0 2px 16px rgba(200,100,200,0.5)",
+                      letterSpacing: "0.01em",
+                      lineHeight: 1.1
+                    }}
+                  >
+                    Eat:
+                  </h3>
+
+                  {/* 4 Pillars — mystical italic style, same as the banner */}
+                  <div className="flex flex-col gap-7">
+                    {[
+                      { title: "Diet", sub: "We are, What We Eat" },
+                      { title: "Exercise", sub: "How you Circulate Your Inner Rivers is Your Physical Adaptability" },
+                      { title: "Mindfulness", sub: "The Art of Living in the Present Moment" },
+                      { title: "Sleep", sub: "Proper Sleep Pattern Determines Your Energy Levels" }
+                    ].map((pillar, i) => (
+                      <div key={i}>
+                        <p
+                          style={{
+                            fontFamily: "var(--font-great-vibes), cursive",
+                            fontSize: "clamp(1.4rem, 3vw, 1.9rem)",
+                            color: "#ffffff",
+                            textShadow: "0 1px 12px rgba(200,120,220,0.6)",
+                            lineHeight: 1.1,
+                            marginBottom: "0.25rem"
+                          }}
+                        >
+                          {pillar.title}
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: "var(--font-great-vibes), cursive",
+                            fontSize: "clamp(0.95rem, 2vw, 1.15rem)",
+                            color: "rgba(255,255,255,0.75)",
+                            textShadow: "0 1px 8px rgba(180,80,200,0.4)",
+                            lineHeight: 1.4
+                          }}
+                        >
+                          {pillar.sub}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>

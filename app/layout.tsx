@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Montserrat, Playfair_Display } from "next/font/google"
+import { Geist, Geist_Mono, Montserrat, Playfair_Display, Great_Vibes } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -22,7 +22,11 @@ const playfair = Playfair_Display({
   weight: ["600", "700", "800"],
   variable: "--font-playfair"
 })
-
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-great-vibes"
+})
 export const metadata: Metadata = {
   // Basic SEO
   title: {
@@ -129,7 +133,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
       </head>
-      <body className={`${geist.variable} ${geistMono.variable} ${montserrat.variable} ${playfair.variable} font-sans antialiased`}>
+      <body className={`${geist.variable} ${geistMono.variable} ${montserrat.variable} ${playfair.variable} ${greatVibes.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
