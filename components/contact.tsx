@@ -14,87 +14,87 @@ export default function Contact() {
     appointmentDate: "",
     appointmentTime: ""
   })
-  
+
   // Generate time slots based on selected day
   const generateTimeSlots = (selectedDate: string) => {
     const slots = [];
     if (!selectedDate) return [];
-    
+
     const date = new Date(selectedDate);
     const dayOfWeek = date.getDay(); // 0 is Sunday, 6 is Saturday
-    
+
     // Clinic hours:
     // Monday-Saturday: 9:30 AM - 2:30 PM
     // Sunday: Closed
-    
+
     // Return empty array for Sundays
     if (dayOfWeek === 0) return [];
-    
+
     const startTime = 9.5; // 9:30 AM in decimal hours
     const endTime = 14.5; // 2:30 PM in 24-hour format (decimal)
-    
+
     // Generate time slots in 30-minute intervals
     let currentTime = startTime;
-    
+
     while (currentTime <= endTime) {
       const hours = Math.floor(currentTime);
       const minutes = (currentTime % 1) * 60;
       const ampm = hours >= 12 ? 'PM' : 'AM';
       const displayHours = hours % 12 || 12; // Convert 0 to 12 for 12-hour format
-      
+
       // Format the time (e.g., "9:30 AM" or "2:00 PM")
       const timeString = `${displayHours}:${minutes === 0 ? '00' : '30'} ${ampm}`;
       slots.push(timeString);
-      
+
       // Move to next 30-minute slot
       currentTime += 0.5;
-      
+
       // Stop at 2:30 PM
       if (currentTime > 14.5) {
         break;
       }
     }
-    
+
     return slots;
   };
-  
+
   // Get time slots for the selected date (or empty array if no date selected)
   const timeSlots = generateTimeSlots(formData.appointmentDate);
-  
+
   // Get dates for the next 14 days with proper day handling
   const getAvailableDates = () => {
     const dates = [];
     const today = new Date();
-    
+
     for (let i = 0; i < 14; i++) {
       const date = new Date();
       date.setDate(today.getDate() + i);
       const dayOfWeek = date.getDay();
-      
+
       // Skip Sundays (0 is Sunday)
       if (dayOfWeek === 0) continue;
-      
+
       const isSaturday = dayOfWeek === 6;
       // Format date as 'Day, Month Date' (e.g., 'Mon, Nov 10')
-      const dayLabel = date.toLocaleDateString('en-US', { 
+      const dayLabel = date.toLocaleDateString('en-US', {
         weekday: 'short',
         month: 'short',
         day: 'numeric'
       }).replace(/,/g, ''); // Remove any commas
-      
+
       // Add time range to the label
       const timeRange = '9:30 AM - 2:30 PM';
-      
+
       // Format for the dropdown option
       const displayText = `${dayLabel} (${timeRange})`;
-      
+
       dates.push({
         value: date.toISOString().split('T')[0],
         label: displayText,
         isWeekend: isSaturday
       });
     }
-    
+
     return dates;
   }
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
@@ -108,7 +108,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     // Validate form
     if (!formData.appointmentDate || !formData.appointmentTime) {
       alert('Please select both date and time for your appointment');
@@ -129,10 +129,10 @@ export default function Contact() {
 
       if (response.ok) {
         setStatus("success")
-        setFormData({ 
-          name: "", 
-          phone: "", 
-          email: "", 
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
           message: "",
           appointmentDate: "",
           appointmentTime: ""
@@ -183,7 +183,7 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Phone */}
               <a
-                href="tel:9791844184"
+                href="tel:+917200460004"
                 className="flex gap-4 p-6 bg-background rounded-lg border border-border hover:border-accent hover:bg-muted/50 transition group"
               >
                 <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 transition">
@@ -191,7 +191,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                  <p className="text-muted-foreground">97918 44184</p>
+                  <p className="text-sm text-muted-foreground">72004 60004</p>
+                  <p className="text-sm text-muted-foreground">97918 44184</p>
                   <p className="text-sm text-accent mt-1">Mon–Sat: 9:30 AM – 2:30 PM</p>
                 </div>
               </a>
@@ -289,12 +290,11 @@ export default function Contact() {
                             <button
                               key={time}
                               type="button"
-                              onClick={() => setFormData({...formData, appointmentTime: time})}
-                              className={`px-4 py-2.5 text-sm font-medium rounded-lg border transition-all ${
-                                formData.appointmentTime === time
+                              onClick={() => setFormData({ ...formData, appointmentTime: time })}
+                              className={`px-4 py-2.5 text-sm font-medium rounded-lg border transition-all ${formData.appointmentTime === time
                                   ? 'bg-accent text-white border-accent shadow-sm'
                                   : 'bg-background border-border hover:border-accent/50 hover:bg-accent/5'
-                              }`}
+                                }`}
                             >
                               {time}
                             </button>

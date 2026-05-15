@@ -95,8 +95,9 @@ export default function Footer() {
           <div className="text-center sm:text-left">
             <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Connect</h3>
             <div className="space-y-3 text-sm">
-              <a href="tel:9791844184" className="flex items-center gap-2 hover:text-accent transition justify-center sm:justify-start py-1">
-                <Phone size={16} /> 97918 44184
+              <a href="tel:+917200460004" className="flex items-center gap-2 hover:text-accent transition justify-center sm:justify-start py-1">
+                <Phone size={16} />
+                <span>72004 60004 / 97918 44184</span>
               </a>
               <a href="https://wa.me/919791844184" className="flex items-center gap-2 hover:text-accent transition justify-center sm:justify-start py-1">
                 <WhatsAppIcon size={16} /> WhatsApp

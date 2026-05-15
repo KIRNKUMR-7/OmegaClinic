@@ -26,15 +26,15 @@ export default function GetInTouch() {
         <div className="grid md:grid-cols-4 gap-6">
           {/* Phone */}
           <a
-            href="tel:9791844184"
+            href="tel:+917200460004"
             className="flex flex-col items-center p-6 bg-primary-foreground/10 rounded-lg border border-primary-foreground/20 hover:border-accent hover:bg-primary-foreground/15 transition group"
           >
             <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent/30 transition">
               <Phone className="text-accent" size={28} />
             </div>
             <h3 className="font-semibold text-primary-foreground mb-2">Phone</h3>
+            <p className="text-primary-foreground/80 text-center text-sm mb-2">72004 60004</p>
             <p className="text-primary-foreground/80 text-center text-sm mb-2">97918 44184</p>
-            <p className="text-xs text-accent">Mon–Sat: 9:30 AM – 2:30 PM</p>
           </a>
 
           {/* WhatsApp */}

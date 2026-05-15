@@ -84,7 +84,7 @@ export default function Hero({ onBookAppointment }: HeroProps) {
               Book Appointment
             </button>
             <a
-              href="tel:9791844184"
+              href="tel:+917200460004"
               className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground rounded-lg font-semibold transition text-sm sm:text-base"
             >
               Call Now
