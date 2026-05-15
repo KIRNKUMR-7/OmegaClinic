@@ -80,6 +80,48 @@ export default function GetInTouch() {
             <p className="text-xs text-accent">Get directions</p>
           </a>
         </div>
+
+        {/* Community Banner */}
+        <div className="mt-8">
+          <a 
+            href="https://chat.whatsapp.com/FX9dlIz6nMmGoSEWiqPwKu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex flex-col md:flex-row items-center justify-between p-8 md:p-12 rounded-lg border border-primary-foreground/20 hover:border-accent overflow-hidden transition-all duration-300 group w-full min-h-[300px]"
+          >
+            {/* Background Image */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              style={{ backgroundImage: "url('/community-banner.png')" }}
+            ></div>
+            
+            {/* Dark Overlay for Text Readability */}
+            <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-300"></div>
+
+            {/* Content (Left) */}
+            <div className="relative z-10 flex-1 flex flex-col items-center md:items-start text-center md:text-left mb-8 md:mb-0">
+              <h3 className="font-serif text-3xl md:text-4xl text-white mb-4">
+                Join Our <span className="text-accent">Wellness Community</span>
+              </h3>
+              <p className="text-white/90 max-w-xl text-base md:text-lg mb-8 leading-relaxed">
+                Become a part of our growing family. Connect with like-minded individuals, share your holistic health journey, receive daily wellness tips, and get exclusive updates directly on WhatsApp.
+              </p>
+              <span className="inline-flex items-center gap-3 px-8 py-4 bg-accent text-accent-foreground rounded-full text-base font-semibold hover:bg-white hover:text-accent transition-all duration-300 shadow-lg">
+                <WhatsAppIcon size={24} /> 
+                Join WhatsApp Group
+              </span>
+            </div>
+
+            {/* QR Code (Right) */}
+            <div className="relative z-10 w-40 h-40 md:w-48 md:h-48 shrink-0 rounded-xl overflow-hidden border-4 border-white/20 shadow-2xl group-hover:scale-105 group-hover:border-accent/50 transition-all duration-500 bg-white p-2">
+              <img 
+                src="/community.png" 
+                alt="Scan to Join Community" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   )
