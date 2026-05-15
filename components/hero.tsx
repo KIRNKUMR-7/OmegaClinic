@@ -63,7 +63,15 @@ export default function Hero({ onBookAppointment }: HeroProps) {
           </div>
 
           {/* Main heading */}
-          <h2 className="font-serif text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance px-2" style={{ color: '#C9A94B' }}>
+          <h2
+            className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance px-2"
+            style={{
+              fontFamily: "var(--font-orbitron), sans-serif",
+              fontWeight: 600,
+              letterSpacing: '0.12em',
+              color: '#C9A94B'
+            }}
+          >
             Holistic Health Center
           </h2>
 

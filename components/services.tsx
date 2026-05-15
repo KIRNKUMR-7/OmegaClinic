@@ -12,7 +12,7 @@ export default function Services() {
     },
     {
       title: "Meditation",
-      icon: <Sparkles size={24} />,
+      icon: <img src="/meditation.png" alt="Meditation" style={{ width: 24, height: 24, objectFit: 'contain', transform: 'scale(2.5)', transformOrigin: 'center' }} />,
       desc: "Ancient practices for inner peace and clarity",
       points: ["Om Meditation", "Chakra Meditation"]
     }
@@ -144,9 +144,9 @@ export default function Services() {
                         {/* 3 Pillars - Diet, Exercise, Sleep */}
                         <div className="flex flex-col gap-4">
                           {[
-                            { title: 'Diet :', sub: 'We are, What We Eat' },
-                            { title: 'Exercise :', sub: 'How you Circulate Your Inner Rivers is Your Physical Adaptability' },
-                            { title: 'Sleep :', sub: 'Proper Sleep Pattern Determines Your Energy Levels' }
+                            { title: 'Diet :', sub: 'We are, What We Eat .' },
+                            { title: 'Exercise :', sub: 'How you Circulate Your Inner Rivers is Your Physical Adaptability .' },
+                            { title: 'Sleep :', sub: 'Proper Sleep Pattern Determines Your Energy Levels .' }
                           ].map((pillar, i) => (
                             <div key={i} className="flex gap-3 items-start">
                               <div className="w-0.5 bg-accent/40 rounded-full flex-shrink-0 self-stretch" />
@@ -195,7 +195,7 @@ export default function Services() {
                   <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22/%3E%3C/svg%3E')", backgroundSize: '100px 100px' }}></div>
                   <div className="relative z-10">
                     <div className="text-center mb-12">
-                      <h3 className="font-serif-heading text-3xl md:text-4xl mb-4">Online Consulting Services</h3>
+                      <h3 className="font-serif-heading text-3xl md:text-4xl mb-4">Online Consulting Classes</h3>
                       <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-primary-foreground/90 font-medium">
                         <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full"><Clock size={18} /> Every Sunday @ 07.30AM - 09.30AM</span>
                       </div>

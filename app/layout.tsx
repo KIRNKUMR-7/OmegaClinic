@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Montserrat, Playfair_Display, Great_Vibes } from "next/font/google"
+import { Geist, Geist_Mono, Montserrat, Playfair_Display, Great_Vibes, Orbitron } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -26,6 +26,11 @@ const greatVibes = Great_Vibes({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-great-vibes"
+})
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-orbitron"
 })
 export const metadata: Metadata = {
   // Basic SEO
@@ -133,7 +138,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
       </head>
-      <body className={`${geist.variable} ${geistMono.variable} ${montserrat.variable} ${playfair.variable} ${greatVibes.variable} font-sans antialiased`}>
+      <body className={`${geist.variable} ${geistMono.variable} ${montserrat.variable} ${playfair.variable} ${greatVibes.variable} ${orbitron.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

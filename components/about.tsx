@@ -20,20 +20,16 @@ export default function About() {
               }}
             />
           </div>
-          <h1 className="dr-name mt-6 text-3xl md:text-4xl text-primary text-center" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 700, textTransform: 'uppercase' }}>
-            Dr. M. MOHAN<br />
-            <span className="pt-suffix" style={{ fontSize: '0.6em', fontWeight: 500 }}>B.H.M.S., M.D<span style={{ fontSize: '0.7em', verticalAlign: 'middle' }}>(AM)</span>.,</span>
-          </h1>
-          <p className="dr-title mt-4 text-xs sm:text-sm md:text-base text-center" style={{
-            fontFamily: "var(--font-playfair), serif",
-            fontWeight: 500,
-            textTransform: 'uppercase',
-            letterSpacing: '0.15em',
-            color: '#A33333',
-            lineHeight: '1.3',
-            padding: '0 8px'
+          <p className="mt-6 text-lg sm:text-xl md:text-2xl tracking-wide text-center" style={{
+            fontFamily: "'Times New Roman', Times, serif",
+            fontWeight: 700,
+            letterSpacing: '0.1em',
+            lineHeight: '1.4',
+            color: '#7B4F2E'
           }}>
-            HOMOEOPATHY &amp; ALTERNATIVE MEDICINE CONSULTANT
+            Dr. M. MOHAN <span style={{ fontWeight: 600 }}>B.H.M.S., M.D<span style={{ fontSize: '0.6em', verticalAlign: 'middle' }}>(AM)</span>.,</span>
+            <br />
+            <span className="text-[10px] sm:text-xs mt-1 block" style={{ letterSpacing: '0.18em', fontWeight: 500, color: '#7B4F2E' }}>HOMOEOPATHY &amp; ALTERNATIVE MEDICINE<br />CONSULTANT</span>
           </p>
           <p className="mt-2 text-center text-[11px] opacity-70" style={{ letterSpacing: '0.15em', fontWeight: 600 }}>Reg No : 2742</p>
         </div>
@@ -50,13 +46,13 @@ export default function About() {
               </div>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Welcome. I am <strong className="text-primary">Dr. M. Mohan</strong>, and my mission is to guide you on a journey toward optimal health using the most effective tools nature and science have to offer.
+              Welcome. I am <strong className="text-primary">Dr. M. Mohan</strong>, and my mission is to guide you on a journey toward optimal health using the most effective tools of nature and science.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               In a world of 'quick fixes,' I take the time to listen to your unique story. Whether you are navigating chronic challenges or simply looking to enhance your daily wellbeing, I provide expert guidance in <strong className="text-primary">Homoeopathy, Alternative Medicine &amp; Positive Pshycology</strong> to help you regain your natural balance.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Let's work together to build a foundation for a healthier, more vibrant life.
+              Let's work together to build a foundation for a healthier & more vibrant life.
             </p>
           </div>
 
