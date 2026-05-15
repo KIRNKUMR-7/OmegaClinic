@@ -64,15 +64,15 @@ export default function Hero({ onBookAppointment }: HeroProps) {
 
           {/* Main heading */}
           <h2
-            className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance px-2"
+            className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl leading-tight text-balance px-2"
             style={{
               fontFamily: "var(--font-orbitron), sans-serif",
-              fontWeight: 600,
+              fontWeight: 60,
               letterSpacing: '0.12em',
               color: '#C9A94B'
             }}
           >
-            Holistic Health Center
+            HOLISTIC HEALTH CENTER
           </h2>
 
           {/* CTA Buttons */}

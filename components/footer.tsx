@@ -33,7 +33,7 @@ export default function Footer() {
               <div className="flex flex-row items-center gap-2">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center p-1">
                   <img
-                    src="/omega-logo.png"
+                    src="/favicon.ico"
                     alt="Omega Clinic Logo"
                     className="w-full h-full object-contain"
                   />
@@ -48,7 +48,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <p className="text-sm text-primary-foreground/80 mb-2">Wholistic Healing in Body, Mind & Soul</p>
+            <p className="text-sm text-primary-foreground/80 mb-2">Holistic Healing in Body, Mind & Soul</p>
             <p className="text-xs text-primary-foreground/60">Elevate your consciousness to Higher Dimension.</p>
           </div>
 
@@ -88,6 +88,7 @@ export default function Footer() {
               <li>Alternative Medicine</li>
               <li>Holistic Care</li>
               <li>Wellness Consulting</li>
+              <li>Meditation Initiation </li>
             </ul>
           </div>
 
@@ -162,6 +163,7 @@ export default function Footer() {
 
         {/* Hours */}
         <div className="mt-6 md:mt-8 text-center text-xs sm:text-sm text-primary-foreground/70">
+          <p className="font-bold">Clinic Running at</p>
           <p>Mon–Sat: 9:30 AM – 2:30 PM | Sunday: Closed</p>
         </div>
       </div>

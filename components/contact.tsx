@@ -191,8 +191,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                  <p className="text-sm text-muted-foreground">72004 60004</p>
                   <p className="text-sm text-muted-foreground">97918 44184</p>
+                  <p className="text-sm text-muted-foreground">72004 60004</p>
                   <p className="text-sm text-accent mt-1">Mon–Sat: 9:30 AM – 2:30 PM</p>
                 </div>
               </a>

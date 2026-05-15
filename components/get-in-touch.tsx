@@ -33,8 +33,8 @@ export default function GetInTouch() {
               <Phone className="text-accent" size={28} />
             </div>
             <h3 className="font-semibold text-primary-foreground mb-2">Phone</h3>
-            <p className="text-primary-foreground/80 text-center text-sm mb-2">72004 60004</p>
-            <p className="text-primary-foreground/80 text-center text-sm mb-2">97918 44184</p>
+            <p className="text-primary-foreground/80 text-center mb-2" style={{ fontSize: '14px', lineHeight: '1.5', fontFamily: 'monospace', letterSpacing: '0.05em' }}>97918 44184</p>
+            <p className="text-primary-foreground/80 text-center mb-2" style={{ fontSize: '14px', lineHeight: '1.5', fontFamily: 'monospace', letterSpacing: '0.05em' }}>72004 60004</p>
           </a>
 
           {/* WhatsApp */}

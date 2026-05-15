@@ -102,7 +102,7 @@ export default function Services() {
                     Welcome to <span className="text-accent">The Yogic Cult</span>
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    An exclusive online class dedicated to harmonizing your Body, Mind, and Soul.
+                    An exclusive online classes dedicated to harmonize your Body, Mind, and Soul.
                     Discover the profound ancient sciences of life energy and holistic living.
                   </p>
                 </div>
@@ -195,7 +195,7 @@ export default function Services() {
                   <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22/%3E%3C/svg%3E')", backgroundSize: '100px 100px' }}></div>
                   <div className="relative z-10">
                     <div className="text-center mb-12">
-                      <h3 className="font-serif-heading text-3xl md:text-4xl mb-4">Online Consulting Classes</h3>
+                      <h3 className="font-serif-heading text-3xl md:text-4xl mb-4">Online Classes</h3>
                       <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-primary-foreground/90 font-medium">
                         <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full"><Clock size={18} /> Every Sunday @ 07.30AM - 09.30AM</span>
                       </div>
