@@ -72,7 +72,7 @@ export default function Hero({ onBookAppointment }: HeroProps) {
               color: '#C9A94B'
             }}
           >
-            HOLISTIC HEALTH CENTER
+            Get Tuned - For Self Healing
           </h2>
 
           {/* CTA Buttons */}
