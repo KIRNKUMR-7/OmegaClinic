@@ -64,7 +64,7 @@ export default function Hero({ onBookAppointment }: HeroProps) {
 
           {/* Main heading */}
           <h2
-            className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl leading-tight text-balance px-2"
+            className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl leading-tight text-balance px-2"
             style={{
               fontFamily: "'Times New Roman', Times, serif",
               fontWeight: 60,
