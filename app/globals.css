@@ -120,6 +120,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -134,4 +135,3 @@ html {
   font-family: var(--font-playfair), serif;
   font-weight: 700;
 }
-

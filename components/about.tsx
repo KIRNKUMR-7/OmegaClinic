@@ -38,9 +38,10 @@ export default function About() {
           {/* Left content */}
           <div className="space-y-6">
             <div>
-              <h2 className="font-serif-heading text-4xl md:text-5xl text-primary">
-                About <span className="text-accent">Omega Clinic</span>
+              <h2 className="font-serif-heading text-4xl md:text-5xl text-primary mb-2">
+                About <span className="text">Us </span>
               </h2>
+              <h3 className="text-4xl md:text-5xl text-accent">Omega Clinic</h3>
               <div className="mt-2 inline-block px-3 py-1 bg-accent/10 border border-accent/20 rounded-full">
                 <span className="text-sm font-semibold tracking-widest text-accent uppercase">Established Since 2009</span>
               </div>
